@@ -1,7 +1,11 @@
-<!DOCTYPE>
- <html>
-  <head>
-   <title>Quizzoc</title>
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Quizzoc</title>
         <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -92,17 +96,17 @@
  
   <body>
   <div class="col s12" ><div class="card-panel hoverable" style="background-color:green;">
-  
+  WELCOME <?php echo($_SESSION["email"]);?> 
   <a class="card-panel red darken-4" style="float:right;color:azure; padding: 12px 20px;" href="form.php">signup</a>
   <a class="card-panel red darken-4" style="float:right;padding-right:10px;color:azure; padding: 12px 20px;" href="login.php">login</a>
-      <a  class="card-panel red darken-4" style="float:right;color:azure;padding-right:10px; padding: 12px 20px;" href="zocc.html">Home</a>
+      <a  class="card-panel red darken-4" style="float:right;color:azure;padding-right:10px; padding: 12px 20px;" href="zocc.php">Home</a>
       <a class="card-panel red darken-4" style="float:right;color:azure;padding-right:10px; padding: 12px 20px;" href="ev.html">Events</a>
       <a class="card-panel red darken-4" style="float:right;color:azure;padding-right:10px; padding: 12px 20px;" href="www.signup.com">Alumni</a>
       <a class="card-panel red darken-4"style="float:right;color:azure;padding-right:10px; padding: 12px 20px;" href="www.signup.com">Results</a>
       <a class="card-panel red darken-4"style="float:right;color:azure;padding-right:10px; padding: 12px 20px;" href="www.signup.com">The Team</a></div></div>
-      <a href="zocc.html" class="brand-logo"><img class="responsive-img" src="jp.png" style="float:left;width:80px;height:100px;"></a>
+      <a href="zocc.php" class="brand-logo"><img class="responsive-img" src="jp.png" style="float:left;width:80px;height:100px;"></a>
      <h2  style="font-size:80px;"><span style="color:DarkTurquoise ">Quiz</span>zoc</h1>
-     <h4 style="text-align:center;">About</h4>
+      <h4 style="text-align:center;">About</h4>
     <div class="container"><p class="z-depth-2" style="text-align:center;"><span style="background-color:azure;">Quizzoc is the Official Quizzing Society of JSS Academy of Technical Education,Noida. This society was constituted in 2002 with the vision to conduct quizzes and tests that are aimed at increasing the general awareness of students and giving an impetus to the spirit of enquiry among them. It has, very successfully, from its inception, been able to provide the students with the right platform for showcasing their cognizance.To achieve this we have divided our committee into 4 teams namely- 
 <li class="a" style="text-align:center;">Quiz Preparation</li>
 <li class="b" style="text-align:center;">Advertisement</li>
